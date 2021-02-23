@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly WebDev Challenge 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.png" class="logo">
+        </header>
+        <section class="form">
+            <div class="col">
+                <h1 class="title">Register Form</h1>
+                <div class="formContainer">
+
+                    <form action="">
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/username.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="text" placeholder="Username">
+                            </div>
+
+                        </div>
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/password.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="password" placeholder="Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                            </div>
+
+                        </div>
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/password.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="password" placeholder="Confirm Password" required>
+                            </div>
+
+
+                        </div>
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/email.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+
+
+                        </div>
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/location.png">
+                            </div>
+                            <div class="elementRight">
+                                <select class="location">
+                                    <option selected disabled>Your Location</option>
+                                    <option value="Gdańsk">Gdańsk</option>
+                                    <option value="Warszawa">Warszawa</option>
+                                    <option value="Poznań">Poznań</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                        <div class="checkbox">
+
+                            <label for="termsOfUse" class="checkboxLabel">
+                                <input type="checkbox" id="termsOfUse" class="checkBtn"/>
+                                <span class="checkmark"></span>I have read and accept the terms of use.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn_green">Sign up</button>
+                    </form>
+                </div>
+
+                <h1 class="title">Send Email</h1>
+                <div class="formContainer">
+
+                    <form action="">
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/username.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+
+                        </div>
+
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/email.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="email" placeholder="Your Email">
+                            </div>
+
+                        </div>
+
+                        <textarea required="required" placeholder="Type your message"></textarea>
+
+                        <div class="checkbox">
+                            <label for="sendEmail" class="checkboxLabel">
+                                <input type="checkbox" id="sendEmail" class="checkBtn"/>
+                                <span class="checkmark"></span>
+                                <p>Send a copy to my Email</p>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn_green">Send Email</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <h1 class="title">Sign In Form</h1>
+                <div class="formContainer">
+
+                    <form action="">
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/username.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="text" placeholder="Username">
+                            </div>
+
+                        </div>
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/password.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="password" placeholder="Password">
+                            </div>
+
+                        </div>
+
+                        <div class="btns">
+                           <div class="checkbox">
+                            <label for="rememberMe" class="checkboxLabel">
+                                <input type="checkbox" id="rememberMe" class="checkBtn"/>
+                                <span class="checkmark"></span><p>Remember me</p>
+                            </label>
+                        </div>
+
+
+                        <button type="submit" class="btn btn_green">Sign in</button> 
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <h1 class="title">Recover Form</h1>
+                <div class="formContainer">
+
+                    <form action="">
+
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/email.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="email" placeholder="Enter your Email">
+                            </div>
+
+                        </div>
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/phone.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="tel" placeholder="Enter your Phone number">
+                            </div>
+
+                        </div>
+
+
+                        <div class="btns">
+                            <div class="btnSmall">
+                                <button type="submit" class="btn btn_green">Send</button>
+                            </div>
+                            <div class="btnSmall">
+                                <button type="submit" disabled class="btn btn_disabled">Done</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <h1 class="title">Subscribe Form</h1>
+                <div class="formContainer">
+                    <form action="">
+                        <div class="inputElement">
+                            <div class="elementLeft">
+                                <img src="img/email.png">
+                            </div>
+                            <div class="elementRight">
+                                <input type="email" placeholder="Enter your Email">
+                            </div>
+
+                        </div>
+
+                        <div class="btns">
+                            <div class="btnSmall">
+                                <button type="submit" class="btn btn_green">Subscribe</button>
+                            </div>
+                            <div class="btnSmall">
+                                <button type="button" class="btn btn_red">No, Thanks</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <img src="img/logo_1.png" class="logo">
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
